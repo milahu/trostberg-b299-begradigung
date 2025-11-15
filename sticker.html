@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    html, body, pre, div {
+        margin: 0;
+        padding: 0;
+    }
+    .label {
+        font-family: sans-serif;
+        font-size: 14pt;
+        text-align: center;
+        /* display: flex;
+        flex-direction: row;
+        align-items: center; */
+    }
+    h1, h2 {
+      font-weight: normal;
+      margin: 0;
+      margin-bottom: 0.8em;
+    }
+    a {
+      font-family: monospace;
+      /* font-size: 10pt; */
+      color: black;
+      text-decoration: none;
+    }
+    a:hover {
+      color: orange;
+    }
+    :root {
+      --page-width: 210mm;
+
+      /* actually 297mm but chrome says no */
+      /* TODO maybe calibrate --page-height for your system */
+      --page-height: calc(297mm + 1.449mm);
+
+      --label-width: 105mm;
+      --label-height: 57mm;
+      --num-labels-per-page-width: 2;
+      --num-labels-per-page-height: 5;
+      --page-padding-y: calc((var(--page-height) - (var(--num-labels-per-page-height) * var(--label-height))) / 2);
+    }
+    .page {
+      width: var(--page-width);
+      height: var(--page-height);
+      /* fixme disable padding collapse */
+      /* padding: var(--page-padding-y) 0; */
+    }
+    table {
+        border-collapse: collapse;
+        border: none;
+    }
+    .label {
+      width: var(--label-width);
+      height: var(--label-height);
+      padding: 1em;
+      box-sizing: border-box;
+      -webkit-border-horizontal-spacing: 0;
+      -webkit-border-vertical-spacing: 0;
+    }
+    .page-height-spacer {
+      height: var(--page-padding-y);
+    }
+    @media screen {
+      .page {
+        outline: dotted 1px red;
+      }
+      .label:hover {
+        background: gray;
+      }
+      .page-height-spacer:hover {
+        background: green;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!--
+  https://github.com/milahu/b299
+  ist eine weiterleitung zu
+  https://github.com/milahu/trostberg-b299-begradigung
+-->
+
+<!-- label x=0 y=0 -->
+<div class=page><div class=page-height-spacer></div><table><tr>
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+<!-- label x=1 y=0 -->
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+</tr>
+<!-- label x=0 y=1 -->
+<tr>
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+<!-- label x=1 y=1 -->
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+</tr>
+<!-- label x=0 y=2 -->
+<tr>
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+<!-- label x=1 y=2 -->
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+</tr>
+<!-- label x=0 y=3 -->
+<tr>
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+<!-- label x=1 y=3 -->
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+</tr>
+<!-- label x=0 y=4 -->
+<tr>
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+<!-- label x=1 y=4 -->
+<td>
+<div class=label>
+<h1>Nein zur Umgehung</h1>
+<h1>Ja zur Begradigung</h1>
+<a href="https://github.com/milahu/b299"
+>github.com/milahu/b299</a>
+</div>
+</td>
+</tr></table><div class=page-height-spacer></div></div>
