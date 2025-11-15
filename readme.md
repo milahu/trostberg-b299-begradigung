@@ -1,6 +1,6 @@
 # Trostberg B299 Begradigung
 
-Nein zur Umgehung - Ja zur Begradigung
+Nein zur Umfahrung - Ja zur Begradigung
 
 Ja zur Natur - Nein zur Altstadt
 
