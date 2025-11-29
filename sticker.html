@@ -41,7 +41,11 @@
       --page-height: calc(297mm + 1.449mm);
 
       --label-width: 105mm;
+      /*
       --label-height: 57mm;
+      */
+      /* borderless 105 x 59 mm */
+      --label-height: calc(var(--page-height) / var(--num-labels-per-page-height));
       --num-labels-per-page-width: 2;
       --num-labels-per-page-height: 5;
       --page-padding-y: calc((var(--page-height) - (var(--num-labels-per-page-height) * var(--label-height))) / 2);
